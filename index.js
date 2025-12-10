@@ -26,6 +26,7 @@ app.use('/api/bookings', bookingsRouter);
 
 // Health check
 app.get('/', (req, res) => res.json({ ok: true, message: 'Car Parking Management API' }));
+app.get('/sudhir', (req, res) => res.json({ ok: true, message: 'This is Sudhir Kumar Singh.' }));
 
 // Connect to MongoDB and start server
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
